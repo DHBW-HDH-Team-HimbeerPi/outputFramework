@@ -1,0 +1,8 @@
+pyproject.toml
+setup.cfg
+src/OutputFramework/OutFramework.py
+src/OutputFramework/__init__.py
+src/output_framework_simon_berndt.egg-info/PKG-INFO
+src/output_framework_simon_berndt.egg-info/SOURCES.txt
+src/output_framework_simon_berndt.egg-info/dependency_links.txt
+src/output_framework_simon_berndt.egg-info/top_level.txt
