@@ -1,3 +1,3 @@
-from src.OutputFramework.OutFramework import OutputFramework
+from OutFramework import OutputFramework
 
 __all__=[OutputFramework]
