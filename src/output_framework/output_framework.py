@@ -29,9 +29,9 @@ class OutputFramework:
         uni.set_pixel(x, y, r, g, b)
 
     @staticmethod
-    def showText(text, r, g, b, fontSize, speed):
+    def showText(text, ro, gr, bl, fontSize, speed):
         width, height = uni.get_shape()
-        colour = (r, g, b)
+        colour = (ro, gr, bl)
         font_file = '/usr/share/fonts/truetype/freefont/FreeSans.ttf'
         font_size = fontSize
         font = ImageFont.truetype(font_file, font_size)
@@ -52,7 +52,8 @@ class OutputFramework:
                 for y in range(height):
                     pixel = image.getpixel((x + scroll, y))
                     r, g, b = [int(n) for n in pixel]
-                    uni.set_pixel(width - 1 - x, y, r, g, b)
+                    if ro == r and gr == g and bl == b:
+                        uni.set_pixel(width - 1 - x, y, r, g, b)
             uni.show()
             time.sleep(speed)
         uni.off()
