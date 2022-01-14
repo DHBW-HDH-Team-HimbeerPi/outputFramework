@@ -32,7 +32,7 @@ class OutputFramework:
     def showText(text, r, g, b, fontSize, speed):
         width, height = uni.get_shape()
         colour = (r, g, b)
-        font_file = '/usr/share/fonts/truetype/freefont/FreeSansBold.ttf'
+        font_file = '/usr/share/fonts/truetype/freefont/FreeSans.ttf'
         font_size = fontSize
         font = ImageFont.truetype(font_file, font_size)
         w, h = font.getsize(text)
