@@ -52,7 +52,7 @@ class OutputFramework:
                 for y in range(height):
                     pixel = image.getpixel((x + scroll, y))
                     r, g, b = [int(n) for n in pixel]
-                    if ro == r and gr == g and bl == b:
+                    if (ro is r and gr is g and bl is b) or (r is 0 and g is 0 and b is 0):
                         uni.set_pixel(width - 1 - x, y, r, g, b)
             uni.show()
             time.sleep(speed)
