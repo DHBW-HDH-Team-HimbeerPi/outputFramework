@@ -1,4 +1,5 @@
 import unicornhathd as uni
+import time
 from PIL import Image, ImageDraw, ImageFont
 
 
