@@ -13,7 +13,7 @@ class OutputFramework:
         """
         for x in range(len(ausgabe)):
             for y in range(len(ausgabe[x])):
-                uni.set_pixel(x, y, ausgabe[x][y][0], ausgabe[x][y][1], ausgabe[x][y][2])
+                uni.set_pixel(y, x, ausgabe[y][x][0], ausgabe[y][x][1], ausgabe[y][x][2])
         uni.show()
 
     @staticmethod
