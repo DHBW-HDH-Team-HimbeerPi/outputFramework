@@ -29,7 +29,7 @@ class OutputFramework:
         uni.set_pixel(x, y, r, g, b)
 
     @staticmethod
-    def showText(text, r, g, b, fontSize):
+    def showText(text, r, g, b, fontSize, speed):
         width, height = uni.get_shape()
         colour = (r, g, b)
         font_file = '/usr/share/fonts/truetype/freefont/FreeSansBold.ttf'
@@ -54,7 +54,7 @@ class OutputFramework:
                     r, g, b = [int(n) for n in pixel]
                     uni.set_pixel(width - 1 - x, y, r, g, b)
             uni.show()
-            time.sleep(0.02)
+            time.sleep(speed)
         uni.off()
 
     @staticmethod
