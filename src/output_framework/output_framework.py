@@ -15,7 +15,7 @@ class OutputFramework:
             for y in range(len(ausgabe[x])):
                 uni.set_pixel(x, y, ausgabe[x][y][0], ausgabe[x][y][1], ausgabe[x][y][2])
 
-        uni.set_rotation(rotation)
+        uni.rotation(rotation)
         uni.show()
 
     @staticmethod
@@ -28,7 +28,7 @@ class OutputFramework:
         :param g: gruene Farbe des Pixels
         :param b: blaue Farbe des Pixels
         """
-        uni.set_rotation(rotation)
+        uni.rotation(rotation)
         uni.set_pixel(x, y, r, g, b)
 
     @staticmethod
@@ -49,7 +49,7 @@ class OutputFramework:
         image = Image.new('RGB', (textWidth, textHeight), (0, 0, 0))
         draw = ImageDraw.Draw(image)
         draw.text((textX, textY), text, colour, font=font)
-        uni.set_rotation(rotation)
+        uni.rotation(rotation)
         for scroll in range(textWidth - width):
             for x in range(width):
                 for y in range(height):
@@ -63,6 +63,6 @@ class OutputFramework:
 
     @staticmethod
     def show(rotation = 90):
-        uni.set_rotation(rotation)
+        uni.rotation(rotation)
         uni.show()
 
