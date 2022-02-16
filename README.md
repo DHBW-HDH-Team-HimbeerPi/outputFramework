@@ -36,14 +36,6 @@ TO SHOW THE SETTED PIXELS; YOU HAVE TO CALL "show()"
 ```
 
 
-show()
-
-```
-shows all setted pixels.
-
-rotation: int (optional; normal 90 degree)
-```
-
 showText()
 
 ```
@@ -57,4 +49,13 @@ fontsize: int (good size for readable text is 12)
 speed: (time in seconds; time for waiting to next step in scrolling; good speed is between 0.05 - 0.1)
 minimum: (if higher there are only full pixel generated, but the best is just 0)
 rotation (optional; normal 90 degree)
+```
+
+
+show()
+
+```
+shows all setted pixels.
+
+rotation: int (optional; normal 90 degree)
 ```
