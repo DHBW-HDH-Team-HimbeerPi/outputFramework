@@ -36,6 +36,14 @@ TO SHOW THE SETTED PIXELS; YOU HAVE TO CALL "show()"
 ```
 
 
+show()
+
+```
+shows all setted pixels.
+
+rotation: int (optional; normal 90 degree)
+```
+
 showText()
 
 ```
