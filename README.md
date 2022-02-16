@@ -1,7 +1,10 @@
 # outputFramework
 
 For Install
-```pip3 install https://github.com/DHBW-HDH-Team-HimbeerPi/outputFramework/releases/download/latest/output_framework_simon_berndt-0.0.1-py3-none-any.whl```
+
+```bash
+pip3 install https://github.com/DHBW-HDH-Team-HimbeerPi/outputFramework/releases/download/latest/output_framework_simon_berndt-0.0.1-py3-none-any.whl
+```
 
 
 All the Methods
